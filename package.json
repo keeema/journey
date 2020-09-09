@@ -1,0 +1,41 @@
+{
+  "name": "journey",
+  "version": "0.0.1",
+  "description": "Simple web application to guide team members on their journey.",
+  "main": "index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "bobril": {
+    "title": "Journey",
+    "buildOutputDir": "./docs",
+    "head": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"><link rel=\"shortcut icon\" type=\"image/ico\" href=\"favicon.ico\" />",
+    "compilerOptions": {
+      "declaration": true,
+      "strict": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "noImplicitReturns": true,
+      "noFallthroughCasesInSwitch": true,
+      "strictPropertyInitialization": true,
+      "preserveConstEnums": false,
+      "removeComments": false,
+      "sourceMap": true
+    }
+  },
+  "dependencies": {
+    "@types/chart.js": "^2.9.24",
+    "bobril": "^14.14.0",
+    "bobx": "^0.28.0",
+    "chart.js": "^2.9.3"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.30.0",
+    "@typescript-eslint/parser": "^2.30.0",
+    "eslint": "^6.8.0",
+    "eslint-config-bobril": "^1.0.2",
+    "typescript": "^4.0.2"
+  }
+}
