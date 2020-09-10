@@ -29,6 +29,7 @@ export class BalanceWheel extends b.Component<IBalanceWheelData> {
               <FormItem
                 value={this.data.wheel.values.get(track.id)!}
                 label={track.label}
+                description={track.description}
                 onChange={(newVal) =>
                   this.data.wheel.values.set(
                     track.id,

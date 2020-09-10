@@ -6,10 +6,11 @@ import { DeveloperWheelDefinition } from "./balanceWheel/sample/developer/trackD
 
 const wheel = new Wheel(DeveloperWheelDefinition);
 
-b.init(() => <BalanceWheel wheel={wheel} />);
-
-// setInterval(() => {
-//   wheel.definition.tracks.forEach((track) =>
-//     wheel.values.set(track.id, Math.floor(Math.random() * Math.floor(10)))
-//   );
-// }, 3000);
+b.init(() => (
+  <>
+    <BalanceWheel wheel={wheel} />
+    <p>
+      <small>With pleasure, Tomáš Růt</small>
+    </p>
+  </>
+));

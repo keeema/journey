@@ -1,34 +1,41 @@
 import * as b from "bobril";
 
+interface IFormItemData {
+  label: string;
+  value: number;
+  description: string;
+  onChange: (newVal: number) => void;
+  onLabelChange?: (newVal: string) => void;
+}
+
 export function FormItem({
   label,
   value,
+  description,
   onChange,
   onLabelChange,
-}: {
-  label: string;
-  value: number;
-  onChange: (newVal: number) => void;
-  onLabelChange?: (newVal: string) => void;
-}): b.IBobrilNode {
+}: IFormItemData): b.IBobrilNode {
   return (
-    <p>
-      <input
-        type="number"
-        value={value}
-        min="0"
-        max="10"
-        onChange={(val) => onChange(parseInt(val, 10))}
-      />
-      {onLabelChange ? (
+    <>
+      <p style={{ display: "flex" }}>
         <input
-          type="text"
-          value={label}
-          onChange={(val) => onLabelChange(val)}
+          type="number"
+          value={value}
+          min="0"
+          max="10"
+          onChange={(val) => onChange(parseInt(val, 10))}
         />
-      ) : (
-        <div>{label}</div>
-      )}
-    </p>
+        {onLabelChange ? (
+          <input
+            type="text"
+            value={label}
+            onChange={(val) => onLabelChange(val)}
+          />
+        ) : (
+          <strong style={{ paddingLeft: 10 }}>{label}</strong>
+        )}
+      </p>
+      <p>{description.length ? description : <br />}</p>
+    </>
   );
 }

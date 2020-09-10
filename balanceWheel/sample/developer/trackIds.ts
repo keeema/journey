@@ -1,4 +1,5 @@
 export const DeveloperTrackIds = {
+  SKILLS_COMPLEXITY: "skills-complexity",
   DELIVERY: "delivery",
   INVESTIGATION_SPEED: "investigation_speed",
   COMPLETION: "completion",

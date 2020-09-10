@@ -4,6 +4,13 @@ import { DeveloperTrackIds } from "./trackIds";
 export const DeveloperWheelDefinition: IWheelDefinition = {
   tracks: [
     {
+      id: DeveloperTrackIds.SKILLS_COMPLEXITY,
+      label: "Skills & Task complexity",
+      color: "#ffff66",
+      description:
+        "How good is the employee in his/her job tasks? In which areas he/she feels as an expert? How difficult tasks is he/she able to solve? (DEV/QA/UX levels)?",
+    },
+    {
       id: DeveloperTrackIds.DELIVERY,
       label: "Delivery",
       color: "#E74C3C",
@@ -54,18 +61,6 @@ export const DeveloperWheelDefinition: IWheelDefinition = {
       label: "Self study",
       color: "#839192",
       description: "",
-    },
-    {
-      id: DeveloperTrackIds.COMMUNICATION,
-      label: "Communication",
-      color: "#EDBB99",
-      description: "Communication abilities with the team",
-    },
-    {
-      id: DeveloperTrackIds.COMMUNICATION,
-      label: "Communication",
-      color: "#EDBB99",
-      description: "Communication abilities with the team",
     },
     {
       id: DeveloperTrackIds.COMMUNICATION,
