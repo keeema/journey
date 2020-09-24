@@ -1,5 +1,5 @@
 import { IWheelDefinition } from "../../data/wheelDefinition";
-import { DeveloperTrackIds } from "./trackIds";
+import { DeveloperTrackIds, QualityAssuranceTrackIds } from "./trackIds";
 
 export const DeveloperWheelDefinition: IWheelDefinition = {
   tracks: [
@@ -8,7 +8,7 @@ export const DeveloperWheelDefinition: IWheelDefinition = {
       label: "Skills & Task complexity",
       color: "#ffff66",
       description:
-        "How good is the employee in his/her job tasks? In which areas he/she feels as an expert? How difficult tasks is he/she able to solve? (DEV/QA/UX levels)?",
+        "How good is the employee in his/her job tasks? In which areas he/she feels as an expert? How difficult tasks is he/she able to solve??",
     },
     {
       id: DeveloperTrackIds.DELIVERY,
@@ -26,7 +26,7 @@ export const DeveloperWheelDefinition: IWheelDefinition = {
     {
       id: DeveloperTrackIds.COMPLETION,
       label: "Completion",
-      color: "#",
+      color: "#66ffff",
       description:
         "Can be the delivered tasks used/implemented immediately, no additional amendments required? ",
     },
@@ -77,6 +77,97 @@ export const DeveloperWheelDefinition: IWheelDefinition = {
     },
     {
       id: DeveloperTrackIds.CUSTOM2,
+      label: "Custom 2",
+      color: "#48C9B0",
+      description: "",
+      customizable: true,
+    },
+  ],
+};
+
+export const QualityAssuranceWheelDefinition: IWheelDefinition = {
+  tracks: [
+    {
+      id: QualityAssuranceTrackIds.SKILLS_COMPLEXITY,
+      label: "Skills & Coding complexity",
+      color: "#ffff66",
+      description:
+        "How good is the employee in his/her job tasks? In which areas he/she feels as an expert? What are the programming skills?",
+    },
+    {
+      id: QualityAssuranceTrackIds.AUTOMATION,
+      label: "Automation",
+      color: "#00ff00",
+      description:
+        "How good is emploeyy in automation? How difficult tests is she able to solve?",
+    },
+    {
+      id: QualityAssuranceTrackIds.EXPLORATORY_TESTING,
+      label: "Exploratory testing",
+      color: "#E74C3C",
+      description:
+        "How much does employee the exploratory testing? How much non-first-sight defects are revealed?",
+    },
+    {
+      id: QualityAssuranceTrackIds.COMPLETION,
+      label: "Completion",
+      color: "#66ffff",
+      description:
+        "Can be the delivered tasks used/implemented immediately, no additional amendments required? ",
+    },
+    {
+      id: QualityAssuranceTrackIds.INVESTIGATION_SPEED,
+      label: "Investigation speed",
+      color: "#9B59B6",
+      description: "Is he/she able to solve a problem quickly?",
+    },
+    {
+      id: QualityAssuranceTrackIds.PROACTIVITY,
+      label: "Proactivity",
+      color: "#2980B9",
+      description:
+        "Is he/she proactive? Does he/she search for solutions how to make things better?",
+    },
+    {
+      id: QualityAssuranceTrackIds.ENGLISH,
+      label: "English",
+      color: "#1ABC9C",
+      description: "Is he/she able to communicate in English?",
+    },
+    {
+      id: QualityAssuranceTrackIds.TEAM_PLAYER,
+      label: "Team Player",
+      color: "#F1C40F",
+      description:
+        "Is he/she a team player? Does he/she create positive atmosphere?",
+    },
+    {
+      id: QualityAssuranceTrackIds.WORKLIFE_BALANCE,
+      label: "Work-life balance",
+      color: "#F39C12",
+      description: "",
+    },
+    {
+      id: QualityAssuranceTrackIds.SELF_STUDY,
+      label: "Self study",
+      color: "#839192",
+      description: "",
+    },
+    {
+      id: QualityAssuranceTrackIds.COMMUNICATION,
+      label: "Communication",
+      color: "#EDBB99",
+      description: "Communication abilities with the team",
+    },
+    {
+      id: QualityAssuranceTrackIds.CUSTOM1,
+      label: "Custom 1",
+      color: "#145A32",
+      description: "",
+      customizable: true,
+    },
+    {
+      id: QualityAssuranceTrackIds.CUSTOM2,
       label: "Custom 2",
       color: "#48C9B0",
       description: "",

@@ -1,7 +1,9 @@
 import * as b from "bobril";
 import { Wheel } from "./data/wheel";
 import { IBalanceWheelGraphData, BalanceWheelGraph } from "./graph";
+import { employeeRole, Role } from "./sample/roleWheels";
 import { FormItem } from "./sample/developer/formItem";
+import { Radio } from "./sample/developer/radioButton";
 
 export interface IBalanceWheelData {
   wheel: Wheel;
@@ -21,12 +23,29 @@ export class BalanceWheel extends b.Component<IBalanceWheelData> {
             value={this.data.wheel.employeeName}
             onChange={(val) => (this.data.wheel.employeeName = val)}
           />
+          <Radio
+            name="role"
+            label="Developer"
+            value={Role.Developer}
+            currentValue={employeeRole.get()}
+            onChange={(val) => val && employeeRole.set(Role.Developer)}
+          />
+          <Radio
+            name="role"
+            label="QA"
+            value={Role.QA}
+            currentValue={employeeRole.get()}
+            onChange={(val) => {
+              val && employeeRole.set(Role.QA);
+            }}
+          />
         </p>
         <div style={wheelStyle}>
           <BalanceWheelGraph {...this.createWheelData()} />
           <div>
             {this.data.wheel.definition.tracks.map((track) => (
               <FormItem
+                key={track.id}
                 value={this.data.wheel.values.get(track.id)!}
                 label={track.label}
                 description={track.description}

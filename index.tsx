@@ -1,14 +1,11 @@
 import * as b from "bobril";
 import "chart.js";
 import { BalanceWheel } from "./balanceWheel/balanceWheel";
-import { Wheel } from "./balanceWheel/data/wheel";
-import { DeveloperWheelDefinition } from "./balanceWheel/sample/developer/trackDefinitions";
-
-const wheel = new Wheel(DeveloperWheelDefinition);
+import { currentWheel } from "./balanceWheel/sample/roleWheels";
 
 b.init(() => (
   <>
-    <BalanceWheel wheel={wheel} />
+    <BalanceWheel wheel={currentWheel()} />
     <p>
       <small>With pleasure, Tomáš Růt</small>
     </p>
