@@ -14,7 +14,7 @@ export const DeveloperTrackIds = {
 };
 
 export const QualityAssuranceTrackIds = {
-  SKILLS_COMPLEXITY: "skills-complexity",
+  TESTING_SKILLS: "testing-skills",
   AUTOMATION: "automation",
   EXPLORATORY_TESTING: "exploratory_testing",
   COMPLETION: "completion",

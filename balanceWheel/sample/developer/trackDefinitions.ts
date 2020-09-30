@@ -88,18 +88,18 @@ export const DeveloperWheelDefinition: IWheelDefinition = {
 export const QualityAssuranceWheelDefinition: IWheelDefinition = {
   tracks: [
     {
-      id: QualityAssuranceTrackIds.SKILLS_COMPLEXITY,
-      label: "Skills & Coding complexity",
+      id: QualityAssuranceTrackIds.TESTING_SKILLS,
+      label: "Testing skills",
       color: "#ffff66",
       description:
-        "How good is the employee in his/her job tasks? In which areas he/she feels as an expert? What are the programming skills?",
+        "How good is the employee in his/her QA tasks? In which areas he/she feels as an expert? What is his/her theoretical knowledge?",
     },
     {
       id: QualityAssuranceTrackIds.AUTOMATION,
       label: "Automation",
       color: "#00ff00",
       description:
-        "How good is emploeyy in automation? How difficult tests is she able to solve?",
+        "How good is employee in automation? How difficult tests is she able to solve?",
     },
     {
       id: QualityAssuranceTrackIds.EXPLORATORY_TESTING,
